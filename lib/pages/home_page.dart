@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             Text("How are you feeling today?",
                 style: TextStyle(
                     fontFamily: 'PlusJakartaSans',
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w200,
                     fontSize: 12))
           ],
         ),
