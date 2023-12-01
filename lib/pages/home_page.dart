@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
+// widgets
+import 'package:health_app/widgets/upcoming_card.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -26,7 +29,14 @@ class HomePage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Ionicons.search))
         ],
       ),
-      body: ListView(children: const []),
+      body: ListView(padding: const EdgeInsets.all(14), children: const [
+        // upcoming card
+        UpcomingCard(),
+
+        // health needs
+
+        // near by doctors
+      ]),
       bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           showSelectedLabels: false,
