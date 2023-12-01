@@ -3,6 +3,7 @@ import 'package:ionicons/ionicons.dart';
 
 // widgets
 import 'package:health_app/widgets/upcoming_card.dart';
+import 'package:health_app/widgets/health_needs.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -33,7 +34,15 @@ class HomePage extends StatelessWidget {
         // upcoming card
         UpcomingCard(),
 
+        SizedBox(height: 20),
+
+        Text('Health Needs',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+
+        SizedBox(height: 15),
+
         // health needs
+        HealthNeeds(),
 
         // near by doctors
       ]),
