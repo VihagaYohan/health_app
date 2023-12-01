@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_app/widgets/near_by_doctors.dart';
 import 'package:ionicons/ionicons.dart';
 
 // widgets
@@ -43,6 +44,17 @@ class HomePage extends StatelessWidget {
 
         // health needs
         HealthNeeds(),
+
+        SizedBox(height: 20),
+
+        Text(
+          "Nearby Doctors",
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        ),
+
+        SizedBox(height: 15),
+
+        NearbyDoctors()
 
         // near by doctors
       ]),
